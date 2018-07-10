@@ -13,6 +13,6 @@ rate = 0.2
 point = 150
 # 計算
 payment = chiken_p * (1 - rate)
-sum_v = (bear_p * bear_v) + (side_p * side_v) + payment * chiken_v
+sum_v = (bear_p * bear_v) + (side_p * side_v) + payment * chiken_v - point
 # 結果を表示
 print("買い物の合計は", sum_v, "円")
