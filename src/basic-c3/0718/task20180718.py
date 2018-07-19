@@ -13,7 +13,7 @@ while True:
     if name == "" or name == "q":
         print("キャンセルされました")
         exit()
-    if name == menu:
+    if name in naiyo:
         print("メインメニューを承りました。")
     else:
         print("選択されたメニューはありません")
