@@ -5,6 +5,67 @@ arithmetic = {
         '*': 2,
         '/': 3,
 }
+
+# 計算する関数
+def add(para1, para2):
+    '''
+    Parameters
+    ----------
+    para1 : int or float
+    para2 : int or floar
+
+    Returns
+    -------
+    para1とpara2を足した値
+    '''
+   return para1 + para2
+help(add)
+
+def mul(para1, para2):
+    '''
+    掛け算を行う
+    Parameters
+    ----------
+    para1: float or int
+    para2: float or int
+
+    Returns
+    -------
+    para1とpara2をかけた値
+    '''
+    return para1 * para2
+help(mul)
+
+def sub(para1, para2):
+    '''
+    引き算を行う
+    Parameters
+    ----------
+    para1: float or int
+    para2: float or int
+
+    Returns
+    -------
+    para1とpara2を引いた値
+    '''
+    return para1 - para2
+help(sub)
+
+def div(para1, para2):
+    '''
+    割り算を行う
+    Parameters
+    ----------
+    para1: float or int
+    para2: float or int
+
+    Returns
+    -------
+    para1とpara2を割った値
+    '''
+   return para1 / para2
+help(div)
+
 # 出力
 print("四則演算プログラムです。")
 while True:
@@ -31,58 +92,6 @@ while True:
         break
     else:
         print('エラーです。再度入力してください')
-
-# 計算する関数
-    def add(para1, para2):
-        '''
-        Parameters
-        ----------
-        para1 : int or float
-        para2 : int or floar
-        Returns
-        -------
-        para1とpara2を足した値
-        '''
-        return para1 + para2
-
-    def mul(para1, para2):
-        '''
-        掛け算を行う
-        Parameters
-        ----------
-        para1: float or int
-        para2: float or int
-        Returns
-        -------
-        para1とpara2をかけた値
-        '''
-        return para1 * para2
-
-    def sub(para1, para2):
-        '''
-        引き算を行う
-        Parameters
-        ----------
-        para1: float or int
-        para2: float or int
-        Returns
-        -------
-        para1とpara2を引いた値
-        '''
-        return para1 - para2
-
-    def div(para1, para2):
-        '''
-        割り算を行う
-        Parameters
-        ----------
-        para1: float or int
-        para2: float or int
-        Returns
-        -------
-        para1とpara2を割った値
-        '''
-        return para1 / para2
 
 # 入力された値を作った関数で計算
 if arithmetic_word == '+':
