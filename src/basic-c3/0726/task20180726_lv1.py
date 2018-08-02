@@ -13,20 +13,23 @@ def shake_dice():
     -------
     random.randint(1, 6)
     """
-    return random.randit(1, 6)
-help(shake_dice)
+    return random.randint(1, 6)
 
-def go_forward():
+def go_forward(Advance_forward):
     """
     リストの合計
+
     Parameters
     ----------
-    go_gorward : int
-    進む目の数
+    Advance_forward : リスト[]
+    リスト名を入れる
+
     Returns
     -------
-    なし
+    sum関数で合計した値
     """
+return sum(Advance_forward)
+
 while True:
     user = input("サイコロを振って下さい")
     if user == "":
