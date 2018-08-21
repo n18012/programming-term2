@@ -32,10 +32,9 @@ def exec():
     res_list = []   # 結果として返すリスト
 
     for name, price in unit_dc.items():
-        value = nums_dc[name]
-        total = price * value
+        value = nums_dc[name] * price
         total_ex_tax.append(total)
-    s = "{}を{}個買いました。合計{}円です。".format(value, total, total_ex_tax)
+    s = "{0}を{1}個買いました。合計{2}円です。".format(name, nums_dc, total_ex_tax)
     res_list.append(s)
 
     return res_list

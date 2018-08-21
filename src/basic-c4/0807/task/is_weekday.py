@@ -18,17 +18,17 @@ def process(target_date):
     a = target_date.strftime("%Y/%m/%d")
     b = target_date.strftime("%a")
     if b == "Sat":
-        res_list.append("{}は{}です。平日ではありません。".format(a, b))
+        res_list.append("{0}は{1}です。平日ではありません。".format(a, b))
         add_weekday = target_date + timedelta(days=2)
         weekday = add_weekday.strftime('%Y/%m/%d')
-        res_list.append("次の平日は{}です。".format(weekday))
+        res_list.append("次の平日は{0}です。".format(weekday))
     elif b == "San":
-        res_list.append("{}は{}です。平日ではありません。".format(a, b))
+        res_list.append("{0}は{1}です。平日ではありません。".format(a, b))
         add_weekday2 = target_date + timedelta(days=1)
         weekday2 = add_weekday2.strftime('%Y/%m/%d')
-        res_list.append("次の平日は{}です。".format(weekday2))
+        res_list.append("次の平日は{0}です。".format(weekday2))
     else:
-        res_list.append("{}は{}です。平日です。".format(a, b))
+        res_list.append("{0}は{1}です。平日です。".format(a, b))
 
     return res_list
 
