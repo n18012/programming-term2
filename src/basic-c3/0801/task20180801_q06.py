@@ -8,10 +8,10 @@ arasi_list = [
 ]
 
 # 伸長順に並び替える
-older_list = sorted(
+taller_list = sorted(
     arasi_list,
     key=lambda arasi: arasi[1]
 )
 
 # 結果を表示
-for i in older_list: print(i)
+for i in taller_list: print(i)
